@@ -217,7 +217,7 @@ class BlogPost extends Page
                 'Authors',
                 _t('BlogPost.Authors', 'Authors'),
                 $self->getCandidateAuthors()->map()->toArray()
-            )->setMultiple(true);
+            );
 
             $authorNames = TextField::create(
                 'AuthorNames',
